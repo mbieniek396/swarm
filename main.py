@@ -14,6 +14,6 @@ while True:
     print(f"Connected to {adress}")
     message = client_socket.recv(1024).decode(ENCODING)
     print(f"Cilent said: {message}")
-    client_socket.send("Hi my nigga").encode(ENCODING)
+    client_socket.send("Hi my nigga".encode(ENCODING))
     client_socket.close()
     print(f"Connection to {adress} closed")
