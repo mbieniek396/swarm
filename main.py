@@ -1,7 +1,7 @@
 import socket
 
-HOST = "0.0.0.0"
-PORT = 10000
+HOST = "172.31.25.1"
+PORT = 9090
 ENCODING = 'utf-8'
 
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
