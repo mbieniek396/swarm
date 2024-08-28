@@ -9,6 +9,8 @@ server.bind((HOST, PORT))
 
 server.listen(5)
 
+print(f"Host: {socket.gethostbyname(socket.gethostname())}")
+
 while True:
     client_socket, adress = server.accept()
     print(f"Connected to {adress}")
